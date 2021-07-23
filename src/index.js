@@ -1,10 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import News from './news/App';
+import MainLayout from './components/Layout';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <News />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<MainLayout />, document.getElementById('container'));
