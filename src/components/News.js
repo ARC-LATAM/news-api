@@ -8,6 +8,7 @@ const News = () => {
         <div>
             <NewsSection category='top-headlines' query='category=general' topHeading='general' linkText='See More Headlines' results='100' />
         </div>
+
     )
 }
 

@@ -1,18 +1,8 @@
 import axios from 'axios';
 
-const api = 'API-KEY'
+const api = '39f2498a6a2a348a5af558b0d07a612ca'
 const url = 'https://newsapi.org/v2';
 
-export const fetchSources = async () => {
-    const requestSource = `sources?apiKey=`;
-    try {
-        const { data: { sources } } = await axios.get(`${url}/${requestSource}${api}`);
-
-        return sources.map((source) => source);
-    } catch (error) {
-        return error;
-    }
-};
 
 export const fetchNews = async (request) => {
     try {
